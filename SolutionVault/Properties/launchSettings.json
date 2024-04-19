@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SolutionVault (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SolutionVault (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
