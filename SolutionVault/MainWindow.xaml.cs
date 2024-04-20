@@ -1,6 +1,5 @@
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Media;
 using System;
 using WinUIEx;
 
@@ -17,11 +16,12 @@ namespace SolutionVault
         public MainWindow()
         {
             this.InitializeComponent();
-            this.SystemBackdrop = new MicaBackdrop();
             ExtendsContentIntoTitleBar = true;
             this.SetTitleBarBackgroundColors(Microsoft.UI.Colors.Transparent);
             PersistenceId = "MainWindow";
             navigationView.Loaded += NavigationView_Loaded;
+            MinHeight = 546;
+            MinWidth = 1010;
         }
 
         private void NavigationView_Loaded(object sender, RoutedEventArgs e)

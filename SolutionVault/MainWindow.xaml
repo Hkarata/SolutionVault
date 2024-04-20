@@ -8,6 +8,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="Solution Vault"
+    TaskBarIcon="Images/logo.ico"
     mc:Ignorable="d">
 
 
@@ -16,20 +17,20 @@
             <RowDefinition Height="44" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <Border VerticalAlignment="Stretch" Background="{StaticResource SemiTransparentBackgroundBrush}" >
-            <StackPanel Orientation="Horizontal" Margin="45,0,0,0" >
-                <ImageIcon Source="ms-appx:///Assets\Square44x44Logo.png" Margin="12" VerticalAlignment="Center"/>
+        <Border VerticalAlignment="Stretch" >
+            <StackPanel Orientation="Horizontal">
+                <ImageIcon Source="ms-appx:///Assets\Square44x44Logo.png" Margin="0" VerticalAlignment="Center"/>
                 <TextBlock Text="Solution Vault" VerticalAlignment="Center" FontFamily="Bahnschrift"/>
             </StackPanel>
         </Border>
         <NavigationView IsPaneOpen="True" AlwaysShowHeader="False" BackRequested="NavigationView_BackRequested"
                         IsPaneToggleButtonVisible="True" CompactModeThresholdWidth="0" x:Name="navigationView"
-                        OpenPaneLength="250" Grid.RowSpan="2" PaneDisplayMode="Auto" SelectionChanged="NavigationView_SelectionChanged">
+                        OpenPaneLength="250" Grid.Row="1" PaneDisplayMode="Auto" SelectionChanged="NavigationView_SelectionChanged">
             <NavigationView.MenuItems>
                 <NavigationViewItem Content="Home" Tag="Home" Icon="Home" FontFamily="Bahnschrift"/>
                 <NavigationViewItem Content="Dialogs" Tag="Welcome" Icon="Accept" FontFamily="Bahnschrift"/>
             </NavigationView.MenuItems>
-            <Frame Margin="0,44,0,0" x:Name="contentFrame" Padding="0" Background="Transparent"/>
+            <Frame Margin="0,0,0,0" x:Name="contentFrame" Padding="0" Background="Transparent"/>
         </NavigationView>
     </Grid>
 
