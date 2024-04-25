@@ -9,19 +9,14 @@
     xmlns:controls="using:CommunityToolkit.WinUI"
     mc:Ignorable="d">
 
-    <Grid Margin="10">
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height=".1*"/>
-            <RowDefinition Height=".9*"/>
-        </Grid.RowDefinitions>
+    <ScrollView>
 
-        <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Center" Spacing="10">
-            <TextBlock Text="Let's look" VerticalAlignment="Center"
-                       FontSize="20"/>
-            <AutoSuggestBox PlaceholderText="Search" Width="500" Height="35" FontSize="18" VerticalAlignment="Center"
-                            QueryIcon="Find"/>
-        </StackPanel>
+        <Grid>
+            
+        </Grid>
         
-    </Grid>
+    </ScrollView>
+    
+    
 </Page>

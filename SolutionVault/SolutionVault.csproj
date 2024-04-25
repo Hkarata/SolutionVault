@@ -69,6 +69,7 @@
     <None Remove="Assets\Wide310x150Logo.scale-150.png" />
     <None Remove="Assets\Wide310x150Logo.scale-200.png" />
     <None Remove="Assets\Wide310x150Logo.scale-400.png" />
+    <None Remove="Images\folders.jpg" />
     <None Remove="Images\logo.ico" />
     <None Remove="Images\logo.png" />
     <None Remove="Pages\Home.xaml" />
@@ -76,6 +77,7 @@
     <None Remove="Pages\Welcome.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\folders.jpg" />
     <Content Include="Images\logo.ico" />
     <Content Include="Images\logo.png" />
   </ItemGroup>
